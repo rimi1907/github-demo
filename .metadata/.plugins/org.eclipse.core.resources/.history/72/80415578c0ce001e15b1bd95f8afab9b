@@ -1,0 +1,15 @@
+package StepDefinition;
+
+public class LoginStepDefinition
+{
+
+	
+	
+	@Given("^User is on Login Page$")
+	public void User_is_on_Login_Page()
+	{
+		
+	}
+	
+	
+}

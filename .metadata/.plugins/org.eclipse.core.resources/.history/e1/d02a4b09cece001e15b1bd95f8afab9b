@@ -1,0 +1,25 @@
+package StepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+
+public class LoginStepDefinition
+{
+	WebDriver driver;
+
+	@Given("^User is on Login Page$")
+	public void User_is_on_Login_Page()
+	{
+
+		System.setProperty("webdriver.chrome.driver","C:\\eclipse\\ChromeDriver\\chromedriver.exe");		
+		driver = new ChromeDriver();
+		driver.get("https://app.hubspot.com/login");
+		WebElement Emailadress = driver.findElement(By.xpath("//input[@id='username']"));
+	}
+	
+	
+}
